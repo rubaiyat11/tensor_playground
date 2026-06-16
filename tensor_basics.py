@@ -52,3 +52,12 @@ C = torch.matmul(A, B)
 
 print(C)
 print(C.device)
+
+
+D = torch.tensor([
+    [1, 2],
+    [3, 4],
+    [5, 6]
+])
+
+print(torch.matmul(D, A))
