@@ -64,6 +64,8 @@ torch.save(model.state_dict(), "linear_model_2.pth")
 loaded_model = LinearRegressionModel()
 loaded_model.load_state_dict(torch.load("linear_model_2.pth"))
 
+loaded_model.eval()
+
 with torch.no_grad():
     test_predictions = loaded_model(test_x)
 
